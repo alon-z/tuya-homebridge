@@ -188,6 +188,7 @@ class TuyaPlatform {
         deviceAccessory = new TemperatureAndHumiditySensorAccessory(this, homebridgeAccessory, device);
         this.accessories.set(uuid, deviceAccessory.homebridgeAccessory);
         this.deviceAccessories.set(uuid, deviceAccessory);
+        break;
       default:
         break;
     }
